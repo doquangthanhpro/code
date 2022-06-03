@@ -1,0 +1,70 @@
+@media (max-width: 768px) {
+    .container {
+        width: 800px !important;
+    }
+    .featured-list {
+        display: block !important;
+    }
+    .featured-list-box {
+        width: 100%;
+    }
+    .JOURNAL-list-box-content>h3 {
+        font-size: 15px;
+    }
+    .popular-list {
+        display: block !important;
+        &-box {
+            width: 100%;
+        }
+    }
+    .pdg-flex {
+        display: block;
+    }
+    .box-item {
+        width: 100% !important;
+    }
+    .img-item-2 {
+        height: 500px;
+    }
+    .tx-14 {
+        font-size: 20px !important;
+    }
+    .JOURNAL-list {
+        display: block !important;
+        &-box {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    .follow-list {
+        display: block;
+        &-box {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    .popular-list {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-container .nav {
+        display: none;
+    }
+    .header-top {
+        display: none;
+    }
+    .popular-list-box {
+        width: calc(50% - 15px);
+    }
+    .box-item {
+        width: calc(50% - 15px) !important;
+    }
+    .container {
+        width: 983px !important;
+    }
+    .pdg-flex {
+        width: 983px;
+    }
+}

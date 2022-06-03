@@ -1,0 +1,49 @@
+.JOURNAL {
+    background-color: #FFFF;
+    padding: 50px 0;
+    &>h2 {
+        text-align: center;
+        font-size: 36px;
+        color: black;
+    }
+    &-list {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        &-box {
+            &-content {
+                &>a:first-child {
+                    padding-left: 20px;
+                    position: relative;
+                    color: #8888;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 14px;
+                        height: 7px;
+                        border-radius: 3px;
+                        background-color: red;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                padding: 20px 0;
+                border-bottom: 1px solid #ccc;
+            }
+            &-tag {
+                margin-top: 10px;
+                color: #8888;
+                display: flex;
+                gap: 20px;
+                &>a {
+                    color: #8888;
+                }
+            }
+            &>img {
+                width: 100%;
+            }
+            width: calc(33.33% - 15px);
+        }
+    }
+}

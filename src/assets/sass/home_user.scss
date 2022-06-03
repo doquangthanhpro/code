@@ -1,0 +1,53 @@
+.login {
+  position: relative;
+}
+.search-bar {
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.menu-cap2 {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  width: 150px;
+  padding: 5px 10px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 50%);
+}
+
+.login:hover .menu-cap2 {
+  display: block;
+}
+
+.menu-cap2 li {
+  width: 100% !important;
+  border: 1px solid #fff;
+}
+
+.menu-cap2 li:hover {
+  border: 1px solid #ccc;
+}
+
+.header-top {
+  padding: 10px 0;
+  background-color: #fef7f6;
+  display: flex;
+  justify-content: space-between;
+  &-left {
+    display: flex;
+    gap: 10px;
+    & > span {
+      // color: #0000;
+      line-height: 1.2;
+      font-size: 11px;
+    }
+  }
+  &-right {
+    display: flex;
+    gap: 10px;
+    & > span {
+      font-size: 11px;
+      // color: #0000;
+    }
+  }
+}

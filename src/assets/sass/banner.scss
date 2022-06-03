@@ -1,0 +1,89 @@
+.banner {
+  display: flex;
+  background: url('./../../public/img/banner.png') no-repeat;
+  &-title {
+    color: black;
+    width: 50%;
+    padding: 140px 0;
+    text-align: center;
+    & > p {
+      font-size: 14px;
+      color: #565656;
+      text-align: center;
+    }
+    & > h1 {
+      font-weight: 600;
+      font-size: 58px;
+      line-height: 70px;
+      margin-bottom: 45px;
+      text-align: center;
+      color: black;
+    }
+    & > a {
+      background-color: #ff5353;
+      border-radius: 3px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 15px 30px;
+      text-align: center;
+      &:hover {
+        background: #fff;
+        color: blue;
+        transition: 0.25s all linear;
+      }
+    }
+  }
+  &-img {
+    width: 708px;
+    height: 535px;
+    & > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.flex {
+  justify-content: space-between;
+  display: flex;
+}
+
+.banner02 {
+  background-color: #eae2d8;
+  display: flex;
+  &-left {
+    width: 50%;
+    padding: 129px 0;
+    &-content {
+      text-align: center;
+      & > h1 {
+        font-size: 35px;
+        font-family: "Dancing Script", cursive;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 33px;
+      }
+      & > p {
+        font-size: 24px;
+        margin-bottom: 54px;
+        font-weight: 100;
+      }
+      & > a {
+        background-color: #ff5353;
+        border-radius: 3px;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 15px 30px;
+        &:hover {
+          background: #fff;
+          color: blue;
+          transition: 0.25s all linear;
+        }
+      }
+    }
+  }
+  &-right {
+    width: 50%;
+  }
+}
