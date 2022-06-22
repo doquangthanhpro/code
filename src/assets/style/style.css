@@ -294,7 +294,7 @@ h6 {
 }
 
 .header-top {
-  padding: 10px 0;
+  padding: 10px 0px;
   background-color: #fef7f6;
   display: flex;
   justify-content: space-between;
@@ -427,6 +427,181 @@ p {
   cursor: pointer;
   position: absolute;
   right: 0;
+}
+
+.sub-nav > li:first-child {
+  position: relative;
+}
+.sub-nav > li:first-child:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s all linear;
+}
+.sub-nav > li:first-child > ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: white;
+  top: calc(100% + 21px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.sub-nav > li:first-child > ul::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  top: -31px;
+  left: 0;
+}
+.sub-nav > li:first-child > ul > li {
+  border-bottom: 1px solid #5f5d5d;
+}
+.sub-nav > li:first-child > ul > li:hover {
+  color: rgba(0, 167, 161, 0.91);
+  cursor: pointer;
+}
+
+.sub-nav > li:first-child {
+  position: relative;
+}
+.sub-nav > li:first-child:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s all linear;
+}
+.sub-nav > li:first-child > ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: white;
+  top: calc(100% + 21px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.sub-nav > li:first-child > ul::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  top: -31px;
+  left: 0;
+}
+.sub-nav > li:first-child > ul > li {
+  border-bottom: 1px solid #5f5d5d;
+}
+.sub-nav > li:first-child > ul > li:hover {
+  color: rgba(0, 167, 161, 0.91);
+  cursor: pointer;
+}
+
+.sub-nav > li:nth-child(2) {
+  position: relative;
+}
+.sub-nav > li:nth-child(2):hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s all linear;
+}
+.sub-nav > li:nth-child(2) > ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: white;
+  top: calc(100% + 21px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.sub-nav > li:nth-child(2) > ul::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  top: -31px;
+  left: 0;
+}
+.sub-nav > li:nth-child(2) > ul > li {
+  border-bottom: 1px solid #5f5d5d;
+}
+.sub-nav > li:nth-child(2) > ul > li:hover {
+  color: rgba(0, 167, 161, 0.91);
+  cursor: pointer;
+}
+
+.sub-nav > li:nth-child(3) {
+  position: relative;
+}
+.sub-nav > li:nth-child(3):hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s all linear;
+}
+.sub-nav > li:nth-child(3) > ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: white;
+  top: calc(100% + 21px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.sub-nav > li:nth-child(3) > ul::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  top: -31px;
+  left: 0;
+}
+.sub-nav > li:nth-child(3) > ul > li {
+  border-bottom: 1px solid #5f5d5d;
+}
+.sub-nav > li:nth-child(3) > ul > li:hover {
+  color: rgba(0, 167, 161, 0.91);
+  cursor: pointer;
+}
+
+.sub-nav > li:nth-child(4) {
+  position: relative;
+}
+.sub-nav > li:nth-child(4):hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s all linear;
+}
+.sub-nav > li:nth-child(4) > ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: white;
+  top: calc(100% + 21px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.sub-nav > li:nth-child(4) > ul::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  top: -31px;
+  left: 0;
+}
+.sub-nav > li:nth-child(4) > ul > li {
+  border-bottom: 1px solid #5f5d5d;
+}
+.sub-nav > li:nth-child(4) > ul > li:hover {
+  color: rgba(0, 167, 161, 0.91);
+  cursor: pointer;
 }
 
 .header-container .search-bar {
@@ -1267,6 +1442,7 @@ p {
   color: #000;
 }
 .popular-listitem {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -1516,66 +1692,6 @@ footer {
   color: red;
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 800px !important;
-  }
-
-  .featured-list {
-    display: block !important;
-  }
-
-  .featured-list-box {
-    width: 100%;
-  }
-
-  .JOURNAL-list-box-content > h3 {
-    font-size: 15px;
-  }
-
-  .popular-list {
-    display: block !important;
-  }
-  .popular-list-box {
-    width: 100%;
-  }
-
-  .pdg-flex {
-    display: block;
-  }
-
-  .box-item {
-    width: 100% !important;
-  }
-
-  .img-item-2 {
-    height: 500px;
-  }
-
-  .tx-14 {
-    font-size: 20px !important;
-  }
-
-  .JOURNAL-list {
-    display: block !important;
-  }
-  .JOURNAL-list-box {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .follow-list {
-    display: block;
-  }
-  .follow-list-box {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .popular-list {
-    display: block;
-  }
-}
 @media (max-width: 1024px) {
   .header-container .nav {
     display: none;
@@ -1599,6 +1715,91 @@ footer {
 
   .pdg-flex {
     width: 983px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 800px !important;
+  }
+
+  .featured-list {
+    display: block !important;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .featured-list-box {
+    margin-bottom: 150px;
+    width: 100%;
+    height: 300px;
+  }
+  .featured-list-box > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .JOURNAL-list-box-content > h3 {
+    font-size: 15px;
+  }
+
+  .pdg-flex {
+    display: block;
+  }
+
+  .box-item {
+    width: 100% !important;
+  }
+
+  .img-item-2 {
+    height: 500px;
+  }
+
+  .tx-14 {
+    font-size: 20px !important;
+  }
+
+  .popular-listitem {
+    flex-wrap: wrap;
+    display: block;
+    margin: 0 auto;
+  }
+  .popular-listitem-box {
+    margin: auto auto;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .JOURNAL-list {
+    display: block !important;
+  }
+  .JOURNAL-list-box {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .JOURNAL-list-box > img {
+    width: 100%;
+    flex-shrink: 1;
+  }
+
+  .follow-list {
+    display: block;
+  }
+  .follow-list-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .popular-list {
+    display: block;
+  }
+  .popular-list-box {
+    width: 100% !important;
+  }
+  .popular-list-box > img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 

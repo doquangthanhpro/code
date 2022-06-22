@@ -1,4 +1,4 @@
-window.addEventListener("load", function(event) {
+window.addEventListener("load", function (event) {
     // lấy ra query string from url
     const params = new URLSearchParams(window.location.search)
     const id = params.get('id')
@@ -6,7 +6,7 @@ window.addEventListener("load", function(event) {
         const product = store.getById(id);
         if (product) {
             document.getElementById('image').src = product.image
-            document.getElementById('price').textContent = 'Giá :  ' + product.price + 'đ'
+            document.getElementById('price').textContent = 'Money :  ' + '$' + product.price
             document.getElementById('product-name').textContent = product.name
             document.getElementById('description').textContent = product.description
         }
