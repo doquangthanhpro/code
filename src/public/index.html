@@ -30,6 +30,7 @@
         <div class="header-container">
             <a href="">
                 <div class="logo"><img src="./img/logo.png" alt="Logo HEYYOU"></div>
+              
             </a>
 
             <div id="toggle">
@@ -88,18 +89,67 @@
         </DIV>
     </header>
     <section class="banner">
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width slides/quotes -->
+    <div class="mySlides" >
         <div class="container flex">
             <div class="banner-title">
                 <p>ULTIMATE COLLECTION</p>
                 <h1>
                     Complete Women Fashion Here</h1>
                 <a href="#" class="btn-default">shop now</a>
+                
+        
 
             </div>
             <div class="banner-img">
-                <img src="https://demo.themeies.com/silon/images/ban-1.png" alt="">
+                <img src="https://demo.themeies.com/silon/images/ban-1.png"style="width: 585px; height: 383px;object-fit: cover; object-position:top;" alt="">
             </div>
         </div>
+    </div>
+  
+    <div class="mySlides">
+        <div class="container flex">
+            <div class="banner-title">
+                <p>ULTIMATE COLLECTION</p>
+                <h1>
+                    Complete Women Fashion Here</h1>
+                <a href="#" class="btn-default">shop now</a>
+                
+        
+
+            </div>
+            <div class="banner-img">
+                <img src="https://demo.themeies.com/silon/images/ban-1.png" style="width: 585px; height: 383px;object-fit: cover; object-position:top;" alt="">
+            </div>
+        </div>
+    </div>
+  
+    <div class="mySlides" style="height: 483px;">
+        <div class="container flex">
+            <div class="banner02-left">
+                <div class="banner02-left-content">
+                    <h1>50% OFF</h1>
+                    <P> ALL WOMEN’S COLLECTION</P>
+                    <a href="#" class="btn-default">shop now</a>
+                </div>
+            </div>
+            <div class="banner02-right">
+                <img src="	https://demo.themeies.com/silon/images/ban-2.png" alt=""style="width: 585px; height: 383px;object-fit: cover; object-position:top;">
+            </div>
+        </div>
+    </div>
+  
+    <!-- Next/prev buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <!-- Dots/bullets/indicators -->
+
+      
     </section>
     <section class="featured">
 
@@ -117,7 +167,8 @@
                             <img src="./img/star.png" alt="">
                             <img src="./img/star.png" alt="">
                         </div>
-                        <p class="plice">
+                        <p class="plice">  
+                         
                             $35
                         </p>
                     </div>
@@ -439,32 +490,29 @@
         </div>
         <div class="footer-coppyright">
             <p class="copyright">Copyright © 2019 <a href="#">themeies.com</a>. All rights reserved.</p>
-           
-        </div>
-        <div class="tt" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">
-                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="https://pngimg.com/uploads/phone/phone_PNG48991.png" draggable="true" ondragstart="drag(event)" id="drag1" width="50" height="50">
+              </div>
               
-            </p>
+         
+           
+              <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
-
-        <div class="" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+       
     </footer>
      
 
 
-
-
+    
 
 </body>
-<script>
 
-</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="../assets/js/user.js"></script>
 <script src="../assets/js/slider.js"></script>
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/drop.js"></script>
 
 
 </html>

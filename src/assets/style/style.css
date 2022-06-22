@@ -154,7 +154,7 @@ h6 {
 .slideshow-container {
   position: relative;
   overflow: hidden;
-  padding-top: 86px;
+
 }
 
 /* Hide the images by default */
@@ -408,7 +408,22 @@ p {
 }
 
 .header-container .logo img {
-  height: 44px;
+  animation: code 2s infinite;
+   /* animation-delay: 5s; */
+  height: 44px; 
+   /* transition: 0.6s all linear; */
+}
+@keyframes code {
+  from{
+    transform:rotateX(0deg);
+    
+  }
+  to{
+     
+    transform:rotateY(360deg);
+     
+  }
+
 }
 
 .header-container .search {
@@ -1268,13 +1283,27 @@ p {
 
 /*  */
 .banner {
-  display: flex;
+
+
+}
+.mySlides:first-child {
   background: url("./../../public/img/banner.png") no-repeat;
+  padding: 50px 0;
+}
+.mySlides:nth-child(2){
+  padding: 50px 0;
+  background-color: rgb(103, 208, 104);;
+
+}
+.mySlides:nth-child(3){
+
+  background-color: rgb(117, 205, 195);;
+
 }
 .banner-title {
   color: black;
   width: 50%;
-  padding: 140px 0;
+
   text-align: center;
 }
 .banner-title > p {
@@ -1290,6 +1319,7 @@ p {
   text-align: center;
   color: black;
 }
+
 .banner-title > a {
   background-color: #ff5353;
   border-radius: 3px;
@@ -1303,10 +1333,7 @@ p {
   color: blue;
   transition: 0.25s all linear;
 }
-.banner-img {
-  width: 708px;
-  height: 535px;
-}
+
 .banner-img > img {
   object-fit: cover;
   width: 100%;
@@ -1316,6 +1343,7 @@ p {
 .flex {
   justify-content: space-between;
   display: flex;
+  align-items: center;
 }
 
 .banner02 {
@@ -1369,7 +1397,13 @@ p {
   font-size: 36px;
   text-align: center;
   margin-bottom: 83px;
+
   color: #000;
+  transition : all .2s
+}
+.featured .container > h3:hover {
+  transform: skewY(5deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgb(0 0 0 / 20%);
 }
 .featured-list {
   display: flex;
@@ -1377,11 +1411,24 @@ p {
 }
 .featured-list-box {
   width: calc(33.33% - 30px);
+
+
 }
-.featured-list-box > img {
+.featured-list-img {
+width: 100%;
+  height: 430px;
+  overflow: hidden;
+
+
+}
+.featured-list-img > img {
   width: 100%;
   height: 430px;
   object-fit: cover;
+  transition: 0.55s all linear
+}
+.featured-list-img > img:hover {
+  transform:scale(1.2)
 }
 .featured-list-box-title > p {
   padding-top: 33px;
@@ -1411,7 +1458,12 @@ p {
   font-size: 36px;
   text-align: center;
   color: #000;
+  transition: all 0.2s 
 }
+.popular > h2:hover {
+  transform: skewY(5deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgb(0 0 0 / 20%);
+ }
 .popular-list {
   display: flex;
   flex-wrap: wrap;
@@ -1457,6 +1509,10 @@ p {
   margin: 0 auto 27px;
   width: 56px;
   height: 41px;
+}
+.popular-list-box > img:hover {
+  transform : rotateY(180deg);
+  transition : all linear .5s 
 }
 .popular-listitem-box > h5 {
   margin-bottom: 10px;
@@ -1590,6 +1646,15 @@ p {
 footer {
   background-color: #e9e2d8 !important;
   padding: 0 !important;
+}
+#div1, #div2 {
+  
+  width: 400px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+   display : inline-block;
+ 
 }
 
 .footer-content {
@@ -1802,5 +1867,75 @@ footer {
     object-fit: cover;
   }
 }
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
 
 /*# sourceMappingURL=style.css.map */

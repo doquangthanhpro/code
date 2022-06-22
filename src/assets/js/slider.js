@@ -1,85 +1,26 @@
-// window.addEventListener('load',function(e){
-//     let vt = 0;
-//     const sliders = document.getElementsByClassName('mySlides')
-//     sliders[vt].classList.add('mySlides-active')
+var slideIndex = 1;
+showSlides(slideIndex);
 
-//     const size = sliders.length
-//     function removeActive(){
-//         for(let i =0; i < sliders.length; i ++){
-//             sliders[i].classList.remove('mySlides-active')
-//         }
-//     }
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-//     document.getElementById('btnNext').addEventListener('click',(e)=>{
-//         vt++;
-        
-//         if(vt >=size)
-//         {
-//             vt = 0;
-//         }
-//     })
-//     removeActive()
-//     sliders[vt].classList.add('mySlides-active')
-// })
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-// window.addEventListener('load', function(event){
-//     let vt = 0; 
-//     const sliders = document.getElementsByClassName('mySlides')
-//     sliders[vt].classList.add('mySlides-active')
-//     const size =sliders.length
-//     function removeActive() {
-//       for (let i = 0; i < sliders.length; i++) {
-//         sliders[i].classList.remove('mySlides-active')
-//       }
-//     }
-
-//     document.getElementById('btnNext').addEventListener('click',
-//     function(event) {
-//       vt++
-//       if(vt >= size) {
-//         vt =0
-//       }
-//       removeActive() 
-//       sliders[vt].classList.add('myslides-active')
-//       }
-//     )
-//     document.getElementById('btnPrev').addEventListener('click',
-//     function(event) {
-//       vt--
-//       if(vt <= size) {
-//         vt = size-1
-//       }
-//       removeActive() 
-//       sliders[vt].classList.add('myslides-active')
-//       })
-// })
-
-window.addEventListener('load', function(event) {
-    let vt = 0;
-    const sliders = document.getElementsByClassName('mySlides')
-    sliders[vt].classList.add('mySlides-active')
-    const size = sliders.length;
-
-    function removeActive() {
-        for (let i = 0; i < sliders.length; i++) {
-            sliders[i].classList.remove('mySlides-active')
-        }
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    document.getElementById('btnNext').addEventListener('click', function(event) {
-        vt++;
-        if (vt >= size) {
-            vt = 0
-        }
-        removeActive();
-        sliders[vt].classList.add('mySlides-active')
-    })
-
-    this.document.getElementById('btnPrev').addEventListener('click', function(event) {
-        vt--;
-        if (vt < 0) {
-            vt = size - 1
-        }
-        removeActive()
-        sliders[vt].classList.add('mySlides-active')
-    })
-})
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}

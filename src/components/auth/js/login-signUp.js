@@ -233,7 +233,7 @@ document.querySelector("#frmLogin") &&
 
 
         if (username1.length === 0) {
-            document.querySelector(
+            docu=ent.querySelector(
                 ".error-user"
             ).innerHTML = `Tên tài khoản không được để trống`;
             document.querySelector("#username").classList.add("border-red");

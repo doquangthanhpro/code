@@ -101,26 +101,13 @@ function renderTable(products) {
                             <td>${item.price}</td>
                             <td><img class="img-sp" src="${item.image}" alt="lỗi ảnh"></td>
                             <td>
-                              
-                                <a class="btn btn-view"href="../../../../src/components/products_detail/products.html?id=${item.id}">xem</a>
+                                <button onclick='onEdit(${item.id})' type="button" class="btn btn-primary">edit</button>
+                                <button onclick='onRemove(${item.id})' type="button" class="btn btn-danger">remove</button>
+                                <a href="./product-detail.html?id=${item.id}">xem</a>
                             </td>
                         </tr>
                     `;
-        // content2 +=
-        // `
-        // <div class="box-item t-al blur-ef img-zoom">
-        //         <div class="img-zoom-box">
-        //             <a href="#"><img class="img-item-2" src="${item.image}" alt="lỗi ảnh"></a>
-        //         </div>
-        //         <div class="pdg-2">
-        //             <a class="tx-14" href="#">${item.name}</a>
-        //             <div class="t-al pdg-min">
-        //                 <p>${item.price}</p>
-        //                 <p class="still-item"><i class="fa fa-check"></i> Còn hàng</p>
-        //             </div>
-        //         </div>
-        //     </div>
-        // `
+       
     }
     document.getElementById("tableBody").innerHTML = content;
     // document.getElementById("container-item").innerHTML = content2;
@@ -208,8 +195,8 @@ function onRemove(id) {
 function onEdit(id) {
     var myModal = new bootstrap.Modal(
         document.getElementById("modalProductEdit"), {
-        keyboard: false,
-    }
+            keyboard: false,
+        }
     );
 
     // get detail
@@ -224,7 +211,7 @@ function onEdit(id) {
 
 document
     .getElementById("frmProductEdit")
-    .addEventListener("submit", function (event) {
+    .addEventListener("submit", function(event) {
         event.preventDefault();
         const id = document.getElementById("prodId").value;
         const name = document.getElementById("prodName").value;

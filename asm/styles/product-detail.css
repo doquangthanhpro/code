@@ -1,0 +1,96 @@
+
+
+#error {
+    color: red;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.container2 {
+width: 100%;
+padding-left: 150px;
+padding-top: 130px;
+margin-right: auto;
+margin-left: auto;
+}
+#frmDangKy button {
+    margin-top: 20px;
+    background-color: #000000;
+    border: none;
+    padding: 10px;
+}
+#frmDangKy button:hover{
+    background-color: #000000;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    width: 200px;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 20px;
+}
+.img{
+    flex: 0 0 auto;
+     width: 45%;
+}
+.card2-body{
+    flex: 1 1 auto;
+    padding:20px 40px ;
+    width: 50%;
+    color: #fff;
+
+}
+.card2-body p{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Helvetica Neue', sans-serif;
+
+}
+.card2-body div{
+    padding-top:20px ;
+}
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+font-family: 'Helvetica Neue', sans-serif;}
+.btn-primary {
+    color: rgb(0, 0, 0);
+    background-color: #f797a7;
+    border-color: #f797a7;}
+    .btn-primary2 {
+        color: rgb(0, 0, 0);
+        background-color: #eb4b4b;
+        border-color: #eb4b4b;}
+.pdg-flex2 {
+    display: flex;
+    text-align: center;
+     margin: 26px 200px 0 0px;
+}
